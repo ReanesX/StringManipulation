@@ -18,9 +18,9 @@ namespace StringManipulation
                 Console.WriteLine(s);
             }
 
-            IsWordSearch(text);
+            WordSearch(text);
         }
-        private static void IsWordSearch(string text)
+        private static void WordSearch(string text)
         {
             string[] splitText = text.Split(new Char[] { ' ', ',', '.', ':', '!', '?', ';' }, StringSplitOptions.RemoveEmptyEntries);
             int maxLenght = 0, index = 0;
@@ -34,9 +34,9 @@ namespace StringManipulation
             }
             string longWord = splitText[index];
 
-            IsLongWord(maxLenght, longWord);
+            LongWord(maxLenght, longWord);
         }
-        private static void IsLongWord(int maxLenght, string longWord)
+        private static void LongWord(int maxLenght, string longWord)
         {
             if (maxLenght % 2 == 1)
             {
